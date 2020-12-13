@@ -1,0 +1,79 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  color: #888888;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 27px;
+  color: #333333;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+a:hover {
+  color: #1d9d73;
+}
+
+header {
+  background-color: white;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+.header-container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo > p {
+  display: inline-block;
+}
+
+.header-logo > a {
+  font-weight: normal;
+  font-size: 27px;
+  color: #333333;
+  margin-right: 8px;
+  position: relative;
+}
+
+.header-logo a:before,
+.header-logo a:after {
+  position: absolute;
+}
+
+.header-logo a:before {
+  content: url("../img/logo2.png");
+  top: 0;
+  left: -50px;
+}
+
+.header-logo a:after {
+  content: url("../img/logo1.png");
+  left: -35px;
+}
+
+.header-container li {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+nav ul,
+.search-container {
+  display: inline-block;
+  vertical-align: middle;
+}
