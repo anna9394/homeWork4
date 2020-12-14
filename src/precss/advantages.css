@@ -1,0 +1,111 @@
+.advantages {
+  background-color: #f6f8fa;
+}
+
+.icons {
+  display: flex;
+  margin-left: -10px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.icon {
+  margin: 70px 35px 30px 80px;
+  width: calc(100% / 3 - 115px);
+}
+
+.icon h3 {
+  font-size: 20px;
+  color: #333333;
+  margin-bottom: 25px;
+}
+
+.icon p {
+  margin-bottom: 20px;
+}
+
+.icon a {
+  display: inline-block;
+  padding: 5px 0;
+  color: #48af8e;
+  position: relative;
+}
+
+.icon a:hover {
+  color: rgb(34, 34, 180);
+}
+
+.icon a:after {
+  position: absolute;
+  content: "\76";
+  top: 8px;
+  right: -15px;
+  transform: rotate(-90deg);
+}
+
+.icon:first-child {
+  position: relative;
+}
+
+.icon:first-child:after {
+  position: absolute;
+  content: url("../img/tablet.png");
+  top: -20px;
+  left: -80px;
+}
+
+.icon:nth-child(2) {
+  position: relative;
+}
+
+.icon:nth-child(2):after {
+  position: absolute;
+  content: url("../img/finger.png");
+  top: -30px;
+  left: -60px;
+}
+
+.icon:nth-child(3) {
+  position: relative;
+}
+
+.icon:nth-child(3):after {
+  position: absolute;
+  content: url("../img/bulb.png");
+  top: -30px;
+  left: -60px;
+}
+
+.icon:nth-child(4) {
+  position: relative;
+}
+
+.icon:nth-child(4):after {
+  position: absolute;
+  content: url("../img/gift.png");
+  top: -20px;
+  left: -70px;
+}
+
+.icon:nth-child(5) {
+  position: relative;
+}
+
+.icon:nth-child(5):after {
+  position: absolute;
+  content: url("../img/blocknot.png");
+  top: -20px;
+  left: -70px;
+}
+
+.icon:last-child {
+  position: relative;
+}
+
+.icon:last-child:after {
+  position: absolute;
+  content: url("../img/tool.png");
+  top: -20px;
+  left: -75px;
+}

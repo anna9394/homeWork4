@@ -7,7 +7,10 @@ const browserSync = require('browser-sync').create();
 let cssFiles = [
 	'./src/precss/reset.css',
 	'./src/precss/header.css',
-	'./src/precss/slider.css'
+	'./src/precss/slider.css',
+	'./src/precss/new.css',
+	'./src/precss/advantages.css',
+	'./src/precss/discover.css'
 ];
 
 function styles(){
