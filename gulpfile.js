@@ -10,7 +10,8 @@ let cssFiles = [
 	'./src/precss/slider.css',
 	'./src/precss/new.css',
 	'./src/precss/advantages.css',
-	'./src/precss/discover.css'
+	'./src/precss/discover.css',
+	'./src/precss/data.css'
 ];
 
 function styles(){
