@@ -1,0 +1,43 @@
+.statistics {
+  background-image: url("../img/color.png");
+  min-height: 620px;
+}
+
+.statistics .data-card {
+  background-color: transparent;
+  margin-top: 200px;
+  margin-left: 50px;
+}
+
+.statistics .data-card h2 {
+  color: #1d9d73;
+  font-size: 45px;
+}
+
+.statistics .data-card p {
+  color: #333333;
+  font-size: 20px;
+}
+
+.statistics .data-card h2::before {
+  position: absolute;
+  top: -145px;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.statistics .data-card:first-child h2::before {
+  content: url(../img/cup.png);
+}
+
+.statistics .data-card:nth-child(2) h2::before {
+  content: url(../img/walled.png);
+}
+
+.statistics .data-card:nth-child(3) h2::before {
+  content: url(../img/people.png);
+}
+
+.statistics .data-card:last-child h2::before {
+  content: url(../img/pen.png);
+}

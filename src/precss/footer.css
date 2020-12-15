@@ -1,0 +1,75 @@
+.footer-container {
+  margin-top: 70px;
+  width: 100%;
+  text-align: center;
+  min-height: 370px;
+}
+
+footer h2 {
+  font-size: 35px;
+  margin-bottom: 35px;
+}
+
+.address {
+  margin-bottom: 30px;
+}
+
+.phone {
+  margin-bottom: 30px;
+  font-size: 20px;
+  position: relative;
+}
+
+.phone:before {
+  position: absolute;
+  content: url(../img/phone2.png);
+  top: 10px;
+  left: 35%;
+  transform: translateY(-50%);
+}
+
+.time {
+  margin-bottom: 30px;
+}
+
+.social {
+  display: inline-block;
+  max-width: 250px;
+  width: 100%;
+  max-height: 145px;
+  height: 100%;
+}
+
+.copy {
+  margin-top: 35px;
+  position: relative;
+}
+
+.copy:before {
+  position: absolute;
+  content: url("../img/logo2.png");
+  top: -4px;
+  left: 40%;
+  transform: translateX(-50%);
+}
+
+.copy:after {
+  position: absolute;
+  content: url("../img/logo1.png");
+  top: 1px;
+  left: 41%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 1170px) {
+  .phone:before {
+    content: none;
+  }
+  .copy:before {
+    content: none;
+  }
+
+  .copy:after {
+    content: none;
+  }
+}

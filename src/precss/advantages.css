@@ -51,8 +51,9 @@
 .icon:first-child:after {
   position: absolute;
   content: url("../img/tablet.png");
-  top: -20px;
-  left: -80px;
+  top: 0;
+  left: -50px;
+  transform: translateX(-50%);
 }
 
 .icon:nth-child(2) {
@@ -62,8 +63,9 @@
 .icon:nth-child(2):after {
   position: absolute;
   content: url("../img/finger.png");
-  top: -30px;
-  left: -60px;
+  top: 0;
+  left: -50px;
+  transform: translateX(-50%);
 }
 
 .icon:nth-child(3) {
@@ -73,8 +75,9 @@
 .icon:nth-child(3):after {
   position: absolute;
   content: url("../img/bulb.png");
-  top: -30px;
-  left: -60px;
+  top: 0;
+  left: -50px;
+  transform: translateX(-50%);
 }
 
 .icon:nth-child(4) {
@@ -84,8 +87,9 @@
 .icon:nth-child(4):after {
   position: absolute;
   content: url("../img/gift.png");
-  top: -20px;
-  left: -70px;
+  top: 0;
+  left: -50px;
+  transform: translateX(-50%);
 }
 
 .icon:nth-child(5) {
@@ -95,8 +99,9 @@
 .icon:nth-child(5):after {
   position: absolute;
   content: url("../img/blocknot.png");
-  top: -20px;
-  left: -70px;
+  top: 0;
+  left: -50px;
+  transform: translateX(-50%);
 }
 
 .icon:last-child {
@@ -106,6 +111,41 @@
 .icon:last-child:after {
   position: absolute;
   content: url("../img/tool.png");
-  top: -20px;
-  left: -75px;
+  top: 0;
+  left: -50px;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 1280px) {
+  .icon {
+    width: calc(100% / 2 - 135px);
+    margin: 70px 35px 30px 100px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .icons {
+    text-align: center;
+  }
+  .icon {
+    width: calc(100% - 135px);
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .icon:first-child:after,
+  .icon:nth-child(2):after,
+  .icon:nth-child(3):after,
+  .icon:nth-child(4):after,
+  .icon:nth-child(5):after,
+  .icon:last-child:after {
+    content: none;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .icon {
+    margin: 70px 35px 30px 40px;
+    width: calc(100% - 75px);
+  }
 }

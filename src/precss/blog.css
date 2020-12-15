@@ -1,0 +1,58 @@
+.blog h2 {
+  margin-bottom: 0;
+}
+
+.blog .card {
+  margin-top: 30px;
+}
+
+.blog p {
+  line-height: 24px;
+}
+
+.blog .link {
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.blog .link li {
+  display: inline-block;
+  color: #1d9d73;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.blog .link li:before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.blog .link li:first-child:before {
+  content: url(../img/human.png);
+}
+
+.blog .link li:last-child:before {
+  content: url(../img/date.jpg);
+}
+
+.blog .button-blog {
+  display: flex;
+  background-color: #1d9d73;
+  color: white;
+  font-size: 18px;
+  margin: 0 auto;
+  margin-bottom: 55px;
+  cursor: pointer;
+}
+
+.blog .button-blog:hover {
+  background-color: #8db924;
+}
+
+.blog h3 {
+  color: #333333;
+}

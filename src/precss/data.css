@@ -49,9 +49,9 @@
 
 .data-card h2::before {
   position: absolute;
-  top: 50%;
-  transform: translateY(-150%);
-  left: 30%;
+  top: -80px;
+  transform: translateX(-50%);
+  left: 50%;
 }
 
 .data-card:first-child h2::before {
@@ -64,4 +64,14 @@
 
 .data-card:last-child h2::before {
   content: url(../img/umbrella.png);
+}
+
+@media screen and (max-width: 730px) {
+  .data-cards {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .data-card {
+    width: 100%;
+  }
 }

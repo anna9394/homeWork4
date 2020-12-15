@@ -1,7 +1,6 @@
 .slider {
   background-image: url("../img/slider.png");
   height: 620px;
-  /* align-items: center; */
   margin: 0 auto;
 }
 
@@ -27,6 +26,10 @@
 .slider-container .buttons {
   z-index: 2;
   position: relative;
+}
+.slider-buttons button:hover {
+  cursor: pointer;
+  box-shadow: 3px 0 6px 0 rgba(0, 0, 0, 0.16), -3px 0 6px 0 rgba(0, 0, 0, 0.16);
 }
 
 .slider-buttons {
@@ -74,6 +77,17 @@
 
 .button-slider:hover {
   background-color: #1d9d73;
-  border: 1px solid black;
+  border: 1px solid transparent;
   cursor: pointer;
+}
+
+@media screen and (max-width: 320px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .button {
+    margin-bottom: 20px;
+  }
 }

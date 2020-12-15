@@ -1,0 +1,79 @@
+.packages .new-text h2 {
+  font-size: 35px;
+  margin-top: 65px;
+}
+
+.packages .card-title-section {
+  background-color: #f6f8fa;
+  color: #333333;
+  font-size: 20px;
+  padding: 25px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.packages .card-price-section {
+  background-color: #1fa87a;
+  color: white;
+  font-size: 20px;
+  padding: 25px;
+  text-align: center;
+}
+
+.packages .card ul {
+  background-color: #f6f8fa;
+  padding-left: 115px;
+  padding-bottom: 25px;
+}
+
+.packages .card li {
+  color: #888888;
+  font-size: 11px;
+  padding: 10px 0;
+}
+
+.packages .card-price-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.packages .card-price-section .currency {
+  font-size: 26px;
+  align-self: flex-start;
+  margin-right: 5px;
+}
+
+.packages .card-price-section .price-value {
+  font-size: 36px;
+  margin-right: 5px;
+}
+
+.packages li:first-child {
+  position: relative;
+}
+
+.packages li:first-child::before {
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: translateX(-50%);
+}
+
+.listImg-1:before {
+  content: url(../img/list1.png);
+}
+
+.listImg-2:before {
+  content: url(../img/list2.png);
+}
+
+.listImg-3:before {
+  content: url(../img/list3.png);
+}
+
+@media screen and (max-width: 400px) {
+  .packages .card ul {
+    padding-left: 80px;
+  }
+}

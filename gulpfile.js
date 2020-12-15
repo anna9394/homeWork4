@@ -11,7 +11,23 @@ let cssFiles = [
 	'./src/precss/new.css',
 	'./src/precss/advantages.css',
 	'./src/precss/discover.css',
-	'./src/precss/data.css'
+	'./src/precss/data.css',
+	'./src/precss/blog.css',
+	'./src/precss/statistics.css',
+	'./src/precss/packages.css',
+	'./src/precss/comments.css',
+	'./src/precss/footer.css',
+	'./src/precss/adaptive-header.css',
+	'./src/precss/adaptive-new.css',
+	'./src/precss/adaptive-advantages.css',
+	'./src/precss/adaptive-discover.css',
+	'./src/precss/adaptive-date.css',
+	'./src/precss/adaptive-packages.css',
+	'./src/precss/adaptive-comments.css',
+	'./src/precss/adaptive-footer.css',
+	'./src/precss/adaptive-slider.css'
+
+	
 ];
 
 function styles(){

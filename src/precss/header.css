@@ -11,6 +11,30 @@ img {
   height: auto;
 }
 
+#menu-checkbox {
+  display: none;
+}
+
+.menuList-button {
+  font-size: 20px;
+  display: none;
+}
+
+.btn {
+  padding: 5px 20px;
+  margin-left: 20px;
+  background-color: #71a536;
+  border: 1px solid #628727;
+  border-radius: 2px;
+  color: white;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: gold;
+  color: grey;
+}
+
 h2 {
   font-weight: normal;
   font-size: 27px;
@@ -81,4 +105,64 @@ nav ul,
 .search-container {
   display: inline-block;
   vertical-align: middle;
+}
+
+@media screen and (max-width: 1600px) {
+  .header-container {
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .header-container li {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .menuList-button {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .list li {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .search-container {
+    display: none;
+  }
+  .list {
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+    background-color: white;
+    display: none;
+    position: absolute;
+    width: calc(100% - (100px) * 2);
+    left: calc(100px);
+    z-index: 1;
+  }
+
+  .list a {
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px 180px;
+  }
+
+  #menu-checkbox {
+    visibility: hidden;
+    position: absolute;
+    text-align: center;
+  }
+
+  #menu-checkbox:checked ~ .list {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+  }
 }

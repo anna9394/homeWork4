@@ -27,12 +27,12 @@
   padding-bottom: 40px;
 }
 
-.links {
+.discover .links {
   display: flex;
   flex-direction: column;
 }
 
-.links a {
+.discover .links li {
   font-size: 20px;
   color: #1d9d73;
   padding-left: 65px;
@@ -40,25 +40,67 @@
   position: relative;
 }
 
-.links a::before {
+.discover .links li::before {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 0;
 }
 
-.links a:first-child::before {
+.discover .links li:first-child::before {
   content: url(../img/case.png);
 }
 
-.links a:nth-child(2)::before {
+.discover .links li:nth-child(2)::before {
   content: url(../img/cloud.png);
 }
 
-.links a:nth-child(3)::before {
+.discover .links li:nth-child(3)::before {
   content: url(../img/gear.png);
 }
 
-.links a:last-child::before {
+.discover .links li:last-child::before {
   content: url(../img/key.png);
+}
+
+@media screen and (max-width: 1320px) {
+  .discover-img-container {
+    padding-left: 30px;
+    max-width: 260px;
+    max-height: 330px;
+  }
+  .discover-text-container {
+    padding: 50px 20px 0 100px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .discover .discover-img-container {
+    display: none;
+  }
+  .discover-text-container {
+    padding: 30px;
+  }
+
+  .discover-text-container h2 {
+    text-align: center;
+  }
+
+  .discover-text-container p {
+    text-align: center;
+  }
+  .discover .links {
+    justify-content: center;
+    align-items: center;
+  }
+  .discover .links li:first-child::before,
+  .discover .links li:nth-child(2)::before,
+  .discover .links li:nth-child(3)::before,
+  .discover .links li:last-child::before {
+    content: none;
+  }
+
+  .discover .links li {
+    padding: 0;
+  }
 }
